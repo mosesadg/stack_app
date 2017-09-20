@@ -9,3 +9,4 @@
 - bundle
 - rake db:migrate
 - rails s
+

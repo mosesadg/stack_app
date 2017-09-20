@@ -1,14 +1,7 @@
 
 {
-
     "name": "Stack Q/A App",
-
-    "description": "Ruby on Rails Stacl Q/A App",
-
+    "description": "Ruby on Rails Stack Q/A App",
     "repository": "https://github.com/mosesadg/stack_app",
-
-    "logo": "",
-
     "keywords": ["ruby", "rails"]
-
 }
