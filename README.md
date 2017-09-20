@@ -1,9 +1,11 @@
+# Stack Q/A App 
+## <a href="https://sleepy-taiga-49004.herokuapp.com">Demo Link</a>
 
- [![Deploy my app to Heroku](https://www.herokucdn.com/deploy/button.png)]
-  (https://heroku.com/deploy?template=https://github.com/mosesadg/stack_app)
+<a href="https://heroku.com/deploy?template=https://github.com/mosesadg/stack_app">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
-** Stack Q/A App **
-> To run on localhost
-> run budle
-> rails db:migrate
-> rails s
+## To run on localhost
+- bundle
+- rake db:migrate
+- rails s
