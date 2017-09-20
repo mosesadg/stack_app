@@ -1,24 +1,9 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ [![Deploy my app to Heroku](https://www.herokucdn.com/deploy/button.png)]
+  (https://heroku.com/deploy?template=https://github.com/mosesadg/stack_app)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+** Stack Q/A App **
+> To run on localhost
+> run budle
+> rails db:migrate
+> rails s
