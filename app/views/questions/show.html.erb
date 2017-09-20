@@ -1,1 +1,17 @@
-<%= @question.inspect %>
+<p>
+  <strong>Date</strong>
+  <%= @question.date %>
+</p>
+ 
+<p>
+  <strong>Question</strong>
+  <%= @question.text %>
+</p>
+ 
+ <h3>Answers</h3>
+  <%= render @question.answers %>
+
+ <h3>Add an answer</h3>
+  <%= render 'answers/form' %>
+
+<%= link_to 'Back', questions_path %>

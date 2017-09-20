@@ -1,25 +1,36 @@
-<h3>Questions</h3>
+<div>
+	<div class="btn pull-right">
+		<%= form_tag(questions_path, :method => "get", id: "search-form") do %>
+		<strong>Search Questions or Answers:</strong>
+		<%= text_field_tag :search, params[:search], placeholder: "Search Q/A" %>
+		<%= submit_tag "Search" %>
+		<% end %>
+	</div>
+	<h3>Questions</h3>
+	<table class="table table-hover table-striped">
+			<thead>
+				<tr>
+					<th>
+						#
+					</th>
+					<th>
+						Date
+					</th>
+					<th>
+						User
+					</th>
+					<th>
+						Question
+					</th>
+					<th>
+						Tags
+					</th>
+				
+				</tr>
+			</thead>
 
-<table class="table table-hover table-striped">
-		<thead>
-			<tr>
-				<th>
-					#
-				</th>
-				<th>
-					Date
-				</th>
-				<th>
-					User
-				</th>
-				<th>
-					Question
-				</th>
-			
-			</tr>
-		</thead>
-
-		<tbody>
-			<%= render @questions %>
-	</tbody>
-</table>
+			<tbody>
+				<%= render @questions %>
+		</tbody>
+	</table>
+</div>

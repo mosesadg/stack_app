@@ -1,0 +1,36 @@
+<div>
+<br>
+<%= form_for @question, class: "form-horizontal" do |f| %>
+	 <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@question.errors.count, "error") %> prohibited
+        this question from being saved:
+      </h2>
+      <ul>
+        <% @question.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+	<div class="form-group">
+		<%= f.label :date, class: "col-sm-2 control-label" %>
+		<%= f.date_field :date, class: "form-control" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :text, class: "col-sm-2 control-label" %>
+		<%= f.text_area :text, class: "form-control" %>
+	</div>
+
+  <div class='field'>
+    <%= f.label :tag_list, 'Tags (separated by commas)' %><br/>
+    <%= f.text_field :tag_list %>
+  </div>
+
+	<%= f.submit 'Save', class: 'btn btn-primary btn-block' %>
+<% end %>
+</div>

@@ -1,0 +1,9 @@
+<%= form_for([@question, @question.answers.build]) do |f| %>
+  <%= f.label :Submitter %><br>
+  <%= f.text_field :user %><br>
+  <br>
+  <%= f.label :body %><br>
+  <%= f.text_area :body %><br>
+  <br>
+  <%= f.submit %>
+<% end %>

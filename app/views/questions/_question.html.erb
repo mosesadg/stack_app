@@ -7,10 +7,21 @@
 			<%= question.date %>
 		</td>
 		<td>
-			<%= question.user.last_name %>
+			<%= question.user.email %>
 		</td>
 		<td>
-			<%= truncate(question.text) %>
+			<%= link_to truncate(question.text), question %>
 		</td>
-		
+		<td>
+			Tags: <%= raw(question.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')) %>
+		</td>
+		<td>
+			<% if question.user_id == current_user.id %>
+				<%= link_to 'Edit', edit_question_path(question), class: "btn btn-success btn-sm" %>
+			<% else %>
+				<%= link_to 'Edit', edit_question_path(question), class: "btn btn-primary btn-sm disabled" %>
+			<% end %>
+
+
+
 	</tr>
